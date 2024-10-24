@@ -11,6 +11,7 @@ Ushbu loyiha [Test-English](https://test-english.com/) saytining **kloni** bo‘
 
 ---
 
+
 ## 🛠️ Loyihada qo‘llanilgan texnologiyalar
 
 - **HTML5**: Kontent tuzilmasi uchun
@@ -27,3 +28,6 @@ Loyihani lokal kompyuteringizda ishga tushirish uchun quyidagi amallarni bajarin
 1. **Repositoryni klonlash:**
    ```bash
    git clone https://github.com/SardorbekCoder07/demo_repo.git
+2. **Keyingi ish**
+    ```bash
+    npm install
