@@ -1,0 +1,15 @@
+{
+  "name": "test_english",
+  "version": "1.0.0",
+  "description": "just english website",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./src/input.css -o ./css/tailwind-watch-style/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
