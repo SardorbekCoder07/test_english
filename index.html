@@ -7,6 +7,17 @@
     <title>Test your English</title>
 </head>
 <body>
-    <h1 class="text-red-600">asdadas</h1>
+
+    <div id="navbar"></div>
+
+    <script>
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading navbar:', error));
+      </script>
+    
 </body>
 </html>
