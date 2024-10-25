@@ -6,10 +6,449 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../../css/tailwind-watch-style/output.css">
+    <link rel="stylesheet" href="../../../css/style.css">
 </head>
 
 <body>
-    <div class="container flex justify-center">
+    <div id="header" class="w-full flex justify-center bg-bg-header fixed transition-all">
+        <div class="bg-transparent container max-w-[1400px] mx-auto">
+            <div class="flex items-center justify-between py-4 sm:px-5 px-2">
+                <a href="../../../index.html" class="lg:w-[150px] w-[130px]">
+                    <img src="../../../assets/img/logo.webp" alt="logo">
+                </a>
+                <ul class="nav-links md:flex hidden lg:gap-7 gap-3 lg:m-0 mx-[20px]">
+                    <li class="nav-link cursor-pointer h-fit">
+                        <div href="#"
+                            class=" text-white-textColor lg:text-[16px] md:text-[12px] hover:text-blue-textColor font-bold">
+                            Grammar</div>
+                        <ul
+                            class="drop-down overflow-hidden translate-y-[20px] transition-all fixed hidden bg-white rounded-3xl">
+                            <li>
+                                <a href="public/grammar/elementary/elementary.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-blue-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A1
+                                    </div>
+                                    Elementary
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/grammar/pre-intermediate/pre-intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-blue-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A2
+                                    </div>
+                                    Pre-intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/grammar/intermediate/intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-blue-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1
+                                    </div>
+                                    Intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/grammar/upper-intermediate/upper-intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-blue-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1+
+                                    </div>
+                                    Upper-intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/grammar/pre-advanced/pre-advanced.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-blue-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B2
+                                    </div>
+                                    Pre-advanced
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link cursor-pointer h-fit">
+                        <div href="#"
+                            class=" text-white-textColor lg:text-[16px] md:text-[12px] hover:text-pink-textColor font-bold">
+                            Vocabulary</div>
+                        <ul
+                            class="drop-down overflow-hidden translate-y-[20px] transition-all fixed hidden bg-white rounded-3xl">
+                            <li>
+                                <a href="public/vocabulary/elementary/elementary.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-pink-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon2.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A1
+                                    </div>
+                                    Elementary
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/vocabulary/pre-intermediate/pre-intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-pink-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon2.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A2
+                                    </div>
+                                    Pre-intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/vocabulary/intermediate/intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-pink-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon2.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1
+                                    </div>
+                                    Intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/vocabulary/upper-intermediate/upper-intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-pink-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon2.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1+
+                                    </div>
+                                    Upper-intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/vocabulary/pre-advanced/pre-advanced.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-pink-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon2.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B2
+                                    </div>
+                                    Pre-advanced
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link cursor-pointer h-fit">
+                        <div href="#"
+                            class=" text-white-textColor lg:text-[16px] md:text-[12px] hover:text-yellow-textColor font-bold">
+                            Listening</div>
+                        <ul
+                            class="drop-down overflow-hidden translate-y-[20px] transition-all fixed hidden bg-white rounded-3xl">
+                            <li>
+                                <a href="public/listening/elementary/elementary.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-yellow-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon3.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A1
+                                    </div>
+                                    Elementary
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/listening/pre-intermediate/pre-intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-yellow-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon3.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A2
+                                    </div>
+                                    Pre-intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/listening/intermediate/intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-yellow-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon3.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1
+                                    </div>
+                                    Intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/listening/upper-intermediate/upper-intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-yellow-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon3.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1+
+                                    </div>
+                                    Upper-intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/listening/pre-advanced/pre-advanced.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-yellow-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon3.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B2
+                                    </div>
+                                    Pre-advanced
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link cursor-pointer h-fit">
+                        <div href="#"
+                            class=" text-white-textColor lg:text-[16px] md:text-[12px] hover:text-red-textColor font-bold">
+                            Reading</div>
+                        <ul
+                            class="drop-down overflow-hidden translate-y-[20px] transition-all fixed hidden bg-white rounded-3xl">
+                            <li>
+                                <a href="public/reading/elementary/elementary.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-red-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon4.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A1
+                                    </div>
+                                    Elementary
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/reading/pre-intermediate/pre-intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-red-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon4.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A2
+                                    </div>
+                                    Pre-intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/reading/intermediate/intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-red-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon4.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1
+                                    </div>
+                                    Intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/reading/upper-intermediate/upper-intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-red-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon4.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1+
+                                    </div>
+                                    Upper-intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/reading/pre-advanced/pre-advanced.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-red-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon4.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B2
+                                    </div>
+                                    Pre-advanced
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link cursor-pointer h-fit">
+                        <div href="#"
+                            class=" text-white-textColor lg:text-[16px] md:text-[12px] hover:text-orange-textColor font-bold">
+                            Use of
+                            English</div>
+                        <ul
+                            class="drop-down overflow-hidden translate-y-[20px] transition-all fixed hidden bg-white rounded-3xl">
+                            <li>
+                                <a href="public/use-english/elementary/elementary.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-orange-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon6.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A1
+                                    </div>
+                                    Elementary
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/use-english/pre-intermediate/pre-intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-orange-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon6.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A2
+                                    </div>
+                                    Pre-intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/use-english/intermediate/intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-orange-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon6.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1
+                                    </div>
+                                    Intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/use-english/upper-intermediate/upper-intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-orange-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon6.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1+
+                                    </div>
+                                    Upper-intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/use-english/pre-advanced/pre-advanced.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-orange-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon6.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B2
+                                    </div>
+                                    Pre-advanced
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link cursor-pointer h-fit">
+                        <div href="#"
+                            class=" text-white-textColor lg:text-[16px] md:text-[12px] hover:text-purple-textColor font-bold">
+                            Writing</div>
+                        <ul
+                            class="drop-down overflow-hidden translate-y-[20px] transition-all fixed hidden bg-white rounded-3xl">
+                            <li>
+                                <a href="public/writing/elementary/elementary.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-purple-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon7.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A1
+                                    </div>
+                                    Elementary
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/writing/pre-intermediate/pre-intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-purple-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon7.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A2
+                                    </div>
+                                    Pre-intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/writing/intermediate/intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-purple-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon7.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1
+                                    </div>
+                                    Intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/writing/upper-intermediate/upper-intermediate.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-purple-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon7.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1+
+                                    </div>
+                                    Upper-intermediate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="public/writing/pre-advanced/pre-advanced.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-purple-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon7.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B2
+                                    </div>
+                                    Pre-advanced
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link cursor-pointer h-fit">
+                        <div href="#"
+                            class=" text-white-textColor lg:text-[16px] md:text-[12px] hover:text-green-textColor font-bold">
+                            Exams</div>
+                        <ul
+                            class="drop-down overflow-hidden translate-y-[20px] transition-all fixed hidden bg-white rounded-3xl">
+                            <li>
+                                <a href="public/exams/key/key.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-green-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon5.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A1
+                                    </div>
+                                    Key (KET)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./public/exams/preliminary/preliminary.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-green-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon5.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        A2
+                                    </div>
+                                    Preliminary (PET)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./public/exams/first/first.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-green-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon5.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1
+                                    </div>
+                                    First (FCE)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./public/exams/ielts/ielts.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-green-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon5.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B1+
+                                    </div>
+                                    IELTS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./public/exams/toelf/toefl.html"
+                                    class="flex gap-2 items-center p-3 hover:bg-hoverBackgroundColor transition-all">
+                                    <div
+                                        class="flex items-center justify-center text-green-textColor w-[40px] h-[40px] bg-[url('/../../../assets/img/icon5.png')] bg-no-repeat bg-cover text-[13px] font-semibold">
+                                        B2
+                                    </div>
+                                    TOEFL iBT
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="flex sm:gap-5 gap-2">
+                    <li class="cursor-pointer search">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="25">
+                            <path
+                                d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="border-2 border-borderwhite hover:text-black-color hover:bg-white_bgColor rounded-lg w-[55px] font-bold flex justify-center text-white-textColor">
+                            Login
+                        </a>
+                    </li>
+                    <li class="cursor-pointer md:hidden flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#50af31" width="30">
+                            <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto flex h-[100vh] items-center justify-center">
         <h2>Use-english/upper-mediate</h2>
     </div>
 </body>

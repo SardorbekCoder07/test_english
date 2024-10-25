@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        white_bgColor: "#fff",
-        hoverBackgroundColor: "#f5f5f5",
+        "white_bgColor": "#fff",
+        "bg-header": "#37414F",
+        "hoverBackgroundColor": "#f5f5f59a",
       },
       textColor: {
         "black-color": "#000",

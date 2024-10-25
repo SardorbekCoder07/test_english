@@ -1,14 +1,28 @@
-const scrollHeader = () =>{
-    const header = document.getElementById('header')
-    this.scrollY >= 100 ? header.classList.add('bg-header') 
-                       : header.classList.remove('bg-header')
-}
-window.addEventListener('scroll', scrollHeader)
+// Oxirgi skroll qiymatini saqlash
+let lastScrollY = window.scrollY;
 
+const scrollHeader = () => {
+    const header = document.getElementById('header');
 
-const scrollTransform = () =>{
-    const transform = document.getElementById('header')
-    this.scrollY >= 140 ? transform.classList.add('transform') 
-                       : transform.classList.remove('transform')
-}
-window.addEventListener('scroll', scrollTransform)
+    // Agar skroll pastga bo'lsa - transform qo'shiladi (yashirinadi)
+    if (window.scrollY > lastScrollY && window.scrollY >= 120) {
+        header.classList.add('transform');
+    }
+    // Agar skroll yuqoriga bo'lsa - transform olib tashlanadi (ko'rinadi)
+    else {
+        header.classList.remove('transform');
+    }
+
+    // 100px dan oshsa, background qo'shiladi
+    if (window.scrollY >= 100) {
+        header.classList.add('bg-header');
+    } else {
+        header.classList.remove('bg-header');
+    }
+
+    // Joriy skroll joylashuvini yangilash
+    lastScrollY = window.scrollY;
+};
+
+// Skroll eventini tinglash
+window.addEventListener('scroll', scrollHeader);
