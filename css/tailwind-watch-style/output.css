@@ -596,6 +596,10 @@ video {
   margin: 0px;
 }
 
+.m-3 {
+  margin: 0.75rem;
+}
+
 .mx-\[20px\] {
   margin-left: 20px;
   margin-right: 20px;
@@ -604,6 +608,21 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .flex {
@@ -616,6 +635,10 @@ video {
 
 .h-\[100vh\] {
   height: 100vh;
+}
+
+.h-\[30px\] {
+  height: 30px;
 }
 
 .h-\[40px\] {
@@ -631,6 +654,10 @@ video {
   width: 130px;
 }
 
+.w-\[200px\] {
+  width: 200px;
+}
+
 .w-\[40px\] {
   width: 40px;
 }
@@ -643,8 +670,20 @@ video {
   width: 100%;
 }
 
+.w-\[150px\] {
+  width: 150px;
+}
+
+.w-\[160px\] {
+  width: 160px;
+}
+
 .max-w-\[1400px\] {
   max-width: 1400px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
 }
 
 .max-w-\[580px\] {
@@ -663,6 +702,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -685,6 +728,10 @@ video {
   gap: 0.75rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -697,6 +744,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -706,6 +757,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.bg-bg-header {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 79 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -713,11 +769,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-bg-header {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 79 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/\.\.\/\.\.\/\.\.\/assets\/img\/icon\.png\'\)\] {
@@ -801,6 +852,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -818,6 +874,10 @@ video {
 
 .text-\[13px\] {
   font-size: 13px;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
 }
 
 .text-\[30px\] {
@@ -967,6 +1027,11 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .md\:text-\[12px\] {
