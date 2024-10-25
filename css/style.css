@@ -3,7 +3,14 @@
   font-family: "Raleway", sans-serif;
 }
 .nav-link:hover .drop-down {
+  transition: all 1s;
   transform: translateY(0px);
   display: flex;
   flex-direction: column;
+}
+.bg-header {
+  background: #2d343c;
+}
+.transform {
+  transform: translateY(-60px)
 }
