@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{html,js}","./index.html"],
+  content: ["./public/**/*.{html,js}", "./index.html"],
   theme: {
     extend: {
+      backgroundColor: {
+        white_bgColor: "#fff",
+        hoverBackgroundColor: "#f5f5f5",
+      },
       textColor: {
+        "black-color": "#000",
         "white-textColor": "white",
         "blue-textColor": "#1a8ec1",
         "green-textColor": "#50af31",
@@ -12,8 +17,11 @@ module.exports = {
         "red-textColor": "#ed1c24",
         "orange-textColor": "#ec6825",
         "purple-textColor": "#a84d98",
-      }
+      },
+      borderColor: {
+        borderwhite: "white",
+      },
     },
   },
   plugins: [],
-}
+};
