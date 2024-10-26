@@ -8,9 +8,11 @@ module.exports = {
         "shadow": "0 0 10px 8px #eee",
       },
       backgroundColor: {
+        'bg-grey': '#37424E',
         "bg-blue":"#2d343c",
         "white_bgColor": "#fff",
         "bg-header": "#37414F",
+        "bg-green": "#50af31",
         "hoverBackgroundColor": "#f5f5f59a",
       },
       textColor: {
@@ -25,7 +27,7 @@ module.exports = {
         "purple-textColor": "#a84d98",
       },
       borderColor: {
-        borderwhite: "white",
+        'border-grey': "#5D7799",
       },
     },
   },
