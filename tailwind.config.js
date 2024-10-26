@@ -3,7 +3,12 @@ module.exports = {
   content: ["./public/**/*.{html,js}", "./index.html"],
   theme: {
     extend: {
+      boxShadow:{
+        "box-shadow": "0 0 5px 4px #eee",
+        "shadow": "0 0 10px 8px #eee",
+      },
       backgroundColor: {
+        "bg-blue":"#2d343c",
         "white_bgColor": "#fff",
         "bg-header": "#37414F",
         "hoverBackgroundColor": "#f5f5f59a",

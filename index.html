@@ -14,7 +14,7 @@
 <body>
 
     <div class="bg-[url('/assets/img/bg-img.webp')] bg-no-repeat bg-cover bg-top">
-        <div id="header" class="w-full flex justify-center fixed transition-all">
+        <div id="header" class="w-full flex justify-center fixed top-0 z-40 transition-all">
             <div class="bg-transparent container max-w-[1400px] mx-auto">
                 <div class="flex items-center justify-between py-4 sm:px-5 px-2">
                     <a href="#" class="lg:w-[150px] w-[130px]">
@@ -443,9 +443,16 @@
                                 Login
                             </a>
                         </li>
-                        <li class="cursor-pointer md:hidden flex">
+                        <li class="cursor-pointer md:hidden flex" id="menu_bar">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#50af31" width="30">
                                 <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
+                            </svg>
+                        </li>
+                        <li class="cursor-pointer hidden" id="close">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#50af31" width="30">
+                                <path
+                                    d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                                </path>
                             </svg>
                         </li>
                     </ul>
@@ -460,62 +467,101 @@
                 much more!</p>
         </div>
     </div>
+    <div id="menu" class="fixed top-[-500px] transition-all bg-bg-blue text-white-textColor text-[20px] font-semibold gap-2 w-full flex flex-col items-center py-20">
+        <a href="#">
+            Grammar
+        </a>
+        <a href="#">
+            Vocabulary
+        </a>
+        <a href="#">
+            Listening
+        </a>
+        <a href="#">
+            Reading
+        </a>
+        <a href="#">
+            Use of English
+        </a>
+        <a href="#">
+            Writing
+        </a>
+        <a href="#">
+            Exams
+        </a>
+    </div>
     <div>
-        <h2 class="max-w-fit mx-auto my-10 font-bold text-[30px] flex items-center gap-2">What would you like to<span
-                class="text-green-textColor text-[40px]">learn</span>today?</h2>
-        <div class="container max-w-[1400px] mx-auto md:px-20 px-5 flex flex-wrap gap-5">
-            <div class="overflow-hidden max-w-[400px] rounded-3xl">
+        <h2 class="max-w-fit mx-auto my-10 text-center font-bold sm:text-[30px] text-[20px] ">What would you like
+            to<span class="text-green-textColor sm:text-[40px] text-[25px]"> learn </span>today?</h2>
+        <div
+            class="container max-w-[1400px] mx-auto md:px-20 px-5 flex flex-wrap xl:justify-start justify-center gap-5">
+            <div class="overflow-hidden max-w-[400px] rounded-3xl transition-all shadow-box-shadow hover:shadow-shadow">
                 <img src="assets/img/card_grammar.jpg" alt="">
                 <p class="px-4 text-[22px] my-3 text-blue-textColor font-bold">Grammar Lessons</p>
-                <p class="px-4">Study the grammar lessons that are typically included in each level: A1, A2, B1, B1+, B2. There are
+                <p class="px-4">Study the grammar lessons that are typically included in each level: A1, A2, B1, B1+,
+                    B2. There are
                     three or more exercises and an explanation in each lesson, and feedback for every single question!
                 </p>
-                <a href="#">
-                    <div class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">Go to the lessons</div>
+                <a href="public/cards/grammar/grammar.html">
+                    <div
+                        class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">
+                        Go to the lessons</div>
                 </a>
             </div>
-            <div class="overflow-hidden max-w-[400px] rounded-3xl">
+            <div class="overflow-hidden max-w-[400px] rounded-3xl transition-all shadow-box-shadow hover:shadow-shadow">
                 <img src="assets/img/card_vocabulary.jpg" alt="">
                 <p class="px-4 text-[22px] my-3 text-pink-textColor font-bold">Vocabulary Lessons</p>
-                <p class="px-4">Boost your vocabulary with exercises tailored for each level: A1, A2, B1, B1+, B2. Every lesson
+                <p class="px-4">Boost your vocabulary with exercises tailored for each level: A1, A2, B1, B1+, B2. Every
+                    lesson
                     features keywords, definitions, pictures and quizzes with personalized feedback to enhance your
                     learning.</p>
-                <a href="#">
-                    <div class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">Go to the lessons</div>
+                <a href="public/cards/vocabulary/vocabulary.html">
+                    <div
+                        class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">
+                        Go to the lessons</div>
                 </a>
             </div>
-            <div class="overflow-hidden max-w-[400px] rounded-3xl">
+            <div class="overflow-hidden max-w-[400px] rounded-3xl transition-all shadow-box-shadow hover:shadow-shadow">
                 <img src="assets/img/card_listening.jpg" alt="">
                 <p class="px-4 text-[22px] my-3 text-yellow-textColor font-bold">Listening Tests</p>
-                <p class="px-4">Improve your listening skills by practicing with our video tests. There are tests for each level: A1,
+                <p class="px-4">Improve your listening skills by practicing with our video tests. There are tests for
+                    each level: A1,
                     A2, B1, B1+, B2. You will be able to see the transcription of the audio after you submit your
                     answers.</p>
-                <a href="#">
-                    <div class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">Go to the lessons</div>
+                <a href="public/cards/listening/listening.html">
+                    <div
+                        class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">
+                        Go to the lessons</div>
                 </a>
             </div>
-            <div class="overflow-hidden max-w-[400px] rounded-3xl">
+            <div class="overflow-hidden max-w-[400px] rounded-3xl transition-all shadow-box-shadow hover:shadow-shadow">
                 <img src="assets/img/card_reading.jpg" alt="">
                 <p class="px-4 text-[22px] my-3 text-red-textColor font-bold">Reading Tests</p>
-                <p class="px-4">Need to improve your reading skills? Work on our reading tests. There are reading tests for A1, A2,
+                <p class="px-4">Need to improve your reading skills? Work on our reading tests. There are reading tests
+                    for A1, A2,
                     B1, B1+ and B2. You will find different types of texts and there are different types of questions in
                     each test.
                 </p>
-                <a href="#">
-                    <div class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">Go to the lessons</div>
+                <a href="public/cards/reading/reading.html">
+                    <div
+                        class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">
+                        Go to the lessons</div>
                 </a>
             </div>
-            <div class="overflow-hidden max-w-[400px] rounded-3xl">
+            <div class="overflow-hidden max-w-[400px] rounded-3xl transition-all shadow-box-shadow hover:shadow-shadow">
                 <img src="assets/img/card_use_english.jpg" alt="">
                 <p class="px-4 text-[22px] my-3 text-orange-textColor font-bold">Use of English Tests</p>
-                <p class="px-4">In each of these tests you will find 15 multiple-choice questions about the different grammar lessons
+                <p class="px-4">In each of these tests you will find 15 multiple-choice questions about the different
+                    grammar lessons
                     that you have studied for a specific level: A1, A2, B1, B1+ and B2. You will get feedback for every
                     answer.</p>
-                <a href="#">
-                    <div class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">Go to the lessons</div>
+                <a href="public/cards/use_english/use_english.html">
+                    <div
+                        class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">
+                        Go to the lessons</div>
                 </a>
             </div>
-            <div class="overflow-hidden max-w-[400px] rounded-3xl">
+            <div class="overflow-hidden max-w-[400px] rounded-3xl transition-all shadow-box-shadow hover:shadow-shadow">
                 <img src="assets/img/card_writing.jpg" alt="">
                 <p class="px-4 text-[22px] my-3 text-purple-textColor font-bold">Writing Lessons</p>
                 <p class="px-4">
@@ -523,29 +569,75 @@
                     level: A1, A2, B1, B1+, or B2. You will learn how to organise and connect the text in your
                     compositions.
                 </p>
-                <a href="#">
-                    <div class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">Go to the lessons</div>
+                <a href="public/cards/writing/writing.html">
+                    <div
+                        class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">
+                        Go to the lessons</div>
                 </a>
             </div>
-            <div class="overflow-hidden max-w-[400px] rounded-3xl">
+            <div class="overflow-hidden max-w-[400px] rounded-3xl transition-all shadow-box-shadow hover:shadow-shadow">
                 <img src="assets/img/card_exams.jpg" alt="">
                 <p class="px-4 text-[22px] my-3 text-green-textColor font-bold">Exams</p>
-                <p class="px-4">Improve your exam skills and achieve better results with our practice materials. Test-English will
+                <p class="px-4">Improve your exam skills and achieve better results with our practice materials.
+                    Test-English will
                     help you with your Cambridge KEY, Cambridge Preliminary, Cambridge First, IELTS, or TOEFL iBT exam.
                 </p>
-                <a href="#">
-                    <div class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">Go to the lessons</div>
+                <a href="public/cards/exams/exams.html">
+                    <div
+                        class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">
+                        Go to the lessons</div>
                 </a>
             </div>
-            <div class="overflow-hidden max-w-[400px] rounded-3xl">
+            <div class="overflow-hidden max-w-[400px] rounded-3xl transition-all shadow-box-shadow hover:shadow-shadow">
                 <img src="assets/img/card_level_test.jpg" alt="">
                 <p class="px-4 text-[22px] my-3 text-green-textColor font-bold">Level Test</p>
-                <p class="px-4">If you are not sure about your level, don't worry, you can take this online test. There are 60
+                <p class="px-4">If you are not sure about your level, don't worry, you can take this online test. There
+                    are 60
                     multiple-choice questions and there is no time limit. You will be able to see the answers when you
                     finish the test</p>
-                <a href="#">
-                    <div class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">Go to the lessons</div>
+                <a href="public/cards/level/level.html">
+                    <div
+                        class="border-2 rounded-xl flex justify-center items-center w-[160px] h-[40px] m-3 cursor-pointer">
+                        Go to the lessons</div>
                 </a>
+            </div>
+        </div>
+    </div>
+    <div class="my-5">
+        <h2 class="mx-auto max-w-fit mb-5 text-center sm:text-[30px] text-[20px] font-bold">Check our latest <span
+                class="sm:text-[40px] text-[25px] font-bold text-green-textColor">lessons </span> and <span
+                class="text-[25px] font-bold text-green-textColor">tests !</span>
+        </h2>
+        <div class="container px-4 mx-auto flex xl:justify-between justify-center xl:gap-0 gap-4 flex-wrap">
+            <div
+                class="overflow-hidden shadow-box-shadow hover:shadow-shadow cursor-pointer w-[240px] h-[220px] rounded-3xl">
+                <img src="assets/img/card.webp">
+                <h2>Talking About Money – B1 English Listening Test</h2>
+            </div>
+            <div
+                class="overflow-hidden shadow-box-shadow hover:shadow-shadow cursor-pointer w-[240px] h-[220px] rounded-3xl">
+                <img src="assets/img/card2.webp">
+                <h2>Talking About Money – B1 English Listening Test</h2>
+            </div>
+            <div
+                class="overflow-hidden shadow-box-shadow hover:shadow-shadow cursor-pointer w-[240px] h-[220px] rounded-3xl">
+                <img src="assets/img/card3.webp">
+                <h2>Talking About Money – B1 English Listening Test</h2>
+            </div>
+            <div
+                class="overflow-hidden shadow-box-shadow hover:shadow-shadow cursor-pointer w-[240px] h-[220px] rounded-3xl">
+                <img src="assets/img/card4.webp">
+                <h2>Talking About Money – B1 English Listening Test</h2>
+            </div>
+            <div
+                class="overflow-hidden shadow-box-shadow hover:shadow-shadow cursor-pointer w-[240px] h-[220px] rounded-3xl">
+                <img src="assets/img/card5.webp">
+                <h2>Talking About Money – B1 English Listening Test</h2>
+            </div>
+            <div
+                class="overflow-hidden shadow-box-shadow hover:shadow-shadow cursor-pointer w-[240px] h-[220px] rounded-3xl">
+                <img src="assets/img/card6.webp">
+                <h2>Talking About Money – B1 English Listening Test</h2>
             </div>
         </div>
     </div>
