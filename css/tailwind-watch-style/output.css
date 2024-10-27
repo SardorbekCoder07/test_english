@@ -669,6 +669,18 @@ video {
   margin-top: 2rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .flex {
   display: flex;
 }
@@ -878,6 +890,18 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#\] {
+  background-color: #;
+}
+
+.bg-\[\#fcfb\] {
+  background-color: #fcfb;
 }
 
 .bg-\[url\(\'\/\.\.\/\.\.\/\.\.\/assets\/img\/icon\.png\'\)\] {
@@ -1299,6 +1323,46 @@ video {
 .hover\:before\:opacity-80:hover::before {
   content: var(--tw-content);
   opacity: 0.8;
+}
+
+@media not all and (min-width: 640px) {
+  .max-sm\:w-4 {
+    width: 1rem;
+  }
+
+  .max-sm\:w-40 {
+    width: 10rem;
+  }
+
+  .max-sm\:w-44 {
+    width: 11rem;
+  }
+
+  .max-sm\:w-\[\] {
+    width: ;
+  }
+
+  .max-sm\:w-\[45\] {
+    width: 45;
+  }
+
+  .max-sm\:w-\[45\%\] {
+    width: 45%;
+  }
+
+  .max-sm\:w-\[47\%\] {
+    width: 47%;
+  }
+
+  .max-sm\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .max-sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 640px) {
