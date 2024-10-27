@@ -16,6 +16,7 @@ module.exports = {
         "hoverBackgroundColor": "#f5f5f59a",
       },
       textColor: {
+        'wrt_color': "#5C7597",
         "black-color": "#000",
         "white-textColor": "white",
         "blue-textColor": "#1a8ec1",
